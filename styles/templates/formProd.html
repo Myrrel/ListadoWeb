@@ -1,0 +1,33 @@
+<form class="form-horizontal">
+	<fieldset>
+    <legend class="texto">{{ textButton }}.</legend>
+    <div class="row">
+      <div class="fondo col-xs-offset-3 col-xs-6 ">
+			 <div class="">
+					<div class="form-group">
+						<label class="col-xs-4">Categoría:</label>
+						<input class="col-xs-8" type="text" placeholder="Nombre Categoría" ng-model="producto.nombreCat" required><br>
+					</div>
+					<div class="form-group">
+						<label class="col-xs-4">Nombre</label>
+						<input class="col-xs-8" type="text" placeholder="Nombre Producto" ng-model="producto.nombreProd" required><br>
+					</div>
+					 <div class="form-group">
+						<label class="col-xs-4">Precio</label>
+						<input class="col-xs-8" type="text" placeholder="precio" ng-model="producto.precio"  required><br>
+					</div>
+					<div class="form-group">
+						<label class="col-xs-4">Imagen</label>
+						<input class="col-xs-8"  type="text" placeholder="imagen" ng-model="producto.imagen"><br> 
+					<small>Como este sitio es una demo no se puede cargar una imagen,
+					pero si se puede ingresar la url a una imagen externa.</small>
+				 </div>
+ 			 </div>     
+      </div> 
+    </div>
+    <span class="pull-right ">
+			<button type="submit"  class="btn btn-success">{{ textButton }}</button>
+			 <a href="#/" class="btn btn-warning">Volver al inicio</a>
+    </span>
+  </fieldset>
+</form>
